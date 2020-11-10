@@ -1,0 +1,25 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+   
+   console.log("TASK 3 Sum of all numbers in an array ");
+   console.log("Using anonymous function")
+   
+   var sum=function(arr){
+       
+       var total= arr.reduce(function(result,item){return result+item},0);
+       console.log(total);
+       
+   }
+   sum([1,2,3,4,5]);
+   
+   console.log("Using IIFE")
+   var sum1= (function(arr){ return arr.reduce(function(result,item){return result+item},0)})([1,2,3,4,5]);
+   console.log(sum1);
+});
