@@ -1,0 +1,24 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+   
+   // TASK 7 Remove duplicates from an array 
+   
+   // Using anonymous function
+   
+   var UniqueElements= function(arr)
+   {
+       var a= [...new Set(arr)];
+       console.log(a);
+   }
+   UniqueElements([1,1,2,2,3]);
+   
+   // Using IIFE
+   (function(arr){ console.log([...new Set(arr)])})([1,2,2,3]);
+});
