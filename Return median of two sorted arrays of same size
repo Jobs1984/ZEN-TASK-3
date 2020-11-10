@@ -1,0 +1,31 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+   
+   // using anonymus
+   var median= function(arr,arr1)
+   {
+       var sorted1= arr.sort(function(a,b){return a-b});
+       var sorted2= arr1.sort(function(a,b){return a-b});
+       var combined= sorted1.concat(sorted2);
+       var c= combined.length;
+       console.log((combined[c/2]+combined[(c/2)-1])/2)
+       
+   }
+   median([1,2,3],[4,5,6]);
+   
+   //using IIFE
+   (function(arr,arr1){ 
+        var sorted1= arr.sort(function(a,b){return a-b});
+       var sorted2= arr1.sort(function(a,b){return a-b});
+       var combined= sorted1.concat(sorted2);
+       var c= combined.length;
+       console.log((combined[c/2]+combined[(c/2)-1])/2)
+   })([1,2,3],[4,5,6]);
+});
