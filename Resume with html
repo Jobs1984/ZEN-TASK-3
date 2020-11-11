@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title> Resume </title>
+   </head>
+   <body>
+      <h1> Resume For Rahul Yamsani </h1>
+      <hr/>
+      <h2> About </h2>
+      <p> I am finsished my graduation in Mechatronics Engineering, Right now I am into Full Stack Development</p>
+      <h2> Work Experience </h2>
+      <p> I worked as an intern in Maruthi Suzuki Showroom.</p>
+      <h2> Skills </h2>
+      <p> Java Programming <br/> 
+          C Language <br/>
+          3D Modelling <br/>
+          RDBMS </p>
+      <h2> Interests </h2>
+      <p> Watching Shark Tank <br/>
+          Go-Karting <br/>
+          Anime <br/>
+          </p>  
+   </body>
+</html>
